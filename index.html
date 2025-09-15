@@ -29,7 +29,7 @@
       font-weight: 500;
     }
     .hero {
-      background: url('B.jpg') center/cover no-repeat;
+      background: url('img/B.jpg') center/cover no-repeat;
       height: 80vh;
       display: flex;
       align-items: center;
@@ -47,6 +47,11 @@
       font-size: 2rem;
       color: #ff6600;
       margin-bottom: 10px;
+    }
+    .menu img {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
     }
     footer {
       background-color: #333;
@@ -78,7 +83,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="A.jpg" alt="Jossy Snacks Logo">
+        <img src="img/A.jpg" alt="Jossy Snacks Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -87,6 +92,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
           <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -129,6 +135,31 @@
           <h5>Fast Delivery</h5>
           <p>Enjoy quick delivery right at your doorstep in Entebbe.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu / Pricing -->
+  <section id="menu" class="container py-5 text-center">
+    <h2 class="fw-bold mb-4">Our Menu</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="img/snack1.jpg" alt="Snack 1" class="img-fluid mb-2">
+        <h5>Chicken Bites</h5>
+        <p>UGX 5,000</p>
+        <a href="https://wa.me/256773650169?text=I%20want%20to%20order%20Chicken%20Bites" target="_blank" class="btn btn-warning btn-sm">Order Now</a>
+      </div>
+      <div class="col-md-4">
+        <img src="img/snack2.jpg" alt="Snack 2" class="img-fluid mb-2">
+        <h5>Veggie Rolls</h5>
+        <p>UGX 4,000</p>
+        <a href="https://wa.me/256773650169?text=I%20want%20to%20order%20Veggie%20Rolls" target="_blank" class="btn btn-warning btn-sm">Order Now</a>
+      </div>
+      <div class="col-md-4">
+        <img src="img/snack3.jpg" alt="Snack 3" class="img-fluid mb-2">
+        <h5>Sweet Pastry</h5>
+        <p>UGX 3,500</p>
+        <a href="https://wa.me/256773650169?text=I%20want%20to%20order%20Sweet%20Pastry" target="_blank" class="btn btn-warning btn-sm">Order Now</a>
       </div>
     </div>
   </section>
