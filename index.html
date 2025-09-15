@@ -21,11 +21,15 @@
     .navbar {
       background-color: #ff6600;
     }
-    .navbar-brand, .nav-link, .footer-text {
+    .navbar-brand img {
+      height: 50px;
+    }
+    .navbar-nav .nav-link {
       color: white !important;
+      font-weight: 500;
     }
     .hero {
-      background: url('snacks.jpg') center/cover no-repeat;
+      background: url('B.jpg') center/cover no-repeat;
       height: 80vh;
       display: flex;
       align-items: center;
@@ -37,6 +41,7 @@
     .hero h1 {
       font-size: 3rem;
       font-weight: 700;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
     }
     .features i {
       font-size: 2rem;
@@ -72,7 +77,9 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Jossy Snacks</a>
+      <a class="navbar-brand" href="#">
+        <img src="A.jpg" alt="Jossy Snacks Logo">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -80,7 +87,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -93,7 +99,7 @@
     <div>
       <h1>Welcome to Jossy Snacks</h1>
       <p>Delicious Bites, Anytime, Anywhere!</p>
-      <a href="#contact" class="btn btn-light mt-3">Order Now</a>
+      <a href="https://wa.me/256773650169" target="_blank" class="btn btn-light mt-3">Order Now</a>
     </div>
   </section>
 
@@ -127,16 +133,6 @@
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="container py-5">
-    <h2 class="fw-bold text-center mb-4">Our Gallery</h2>
-    <div class="row g-3">
-      <div class="col-md-4"><img src="img/1.jpg" class="img-fluid rounded shadow-sm" alt="Snack 1"></div>
-      <div class="col-md-4"><img src="img/2.jpg" class="img-fluid rounded shadow-sm" alt="Snack 2"></div>
-      <div class="col-md-4"><img src="img/3.jpg" class="img-fluid rounded shadow-sm" alt="Snack 3"></div>
-    </div>
-  </section>
-
   <!-- Location -->
   <section id="location" class="py-5 bg-light">
     <div class="container">
@@ -157,7 +153,7 @@
 
   <!-- Footer -->
   <footer class="text-center">
-    <p class="footer-text mb-0">&copy; 2025 Jossy Snacks | All Rights Reserved</p>
+    <p class="mb-0">&copy; 2025 Jossy Snacks | All Rights Reserved</p>
   </footer>
 
   <!-- Floating WhatsApp -->
